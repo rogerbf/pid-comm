@@ -1,6 +1,6 @@
 {
   "name": "pid-comm",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ps -ax -o pid -o comm",
   "main": "index.js",
   "bin": {
