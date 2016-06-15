@@ -4,7 +4,7 @@
   "description": "ps -ax -o pid -o comm",
   "main": "index.js",
   "bin": {
-    "pid-comm": "cli.js"
+    "pid-comm": "./bin/cli.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
