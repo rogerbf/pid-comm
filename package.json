@@ -1,13 +1,14 @@
 {
   "name": "pid-comm",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "ps -ax -o pid -o comm",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "bin": {
-    "pid-comm": "./bin/cli.js"
+    "pid-comm": "./dist/bin/cli.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --out-dir dist src"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,20 @@
   "homepage": "https://github.com/rogerbf/pid-comm#readme",
   "dependencies": {
     "execa": "0.4.0"
+  },
+  "devDependencies": {
+    "babel-cli": "6.10.1"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "parserOptions": {
+      "ecmaVersion": 6
+    }
   }
 }
